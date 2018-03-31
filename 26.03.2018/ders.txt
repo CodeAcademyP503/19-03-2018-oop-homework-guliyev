@@ -1,0 +1,80 @@
+Sual 1.
+continue ve break arasindaki ferq ondan ibaretdiki... Dongude break verildikde  emri break; olan hisseye kimi eleyir ve dayanir, ancaq continue da ise emri davam etdirir.
+Continue da ise sertde duzgundurse dongu devam edir ve sertdeki verilen reqem oxunmr lakin davam edir dongu.
+Meselen:
+for (int i = 0; i < 10; i++) 
+{
+    if (i == 0) 
+    {
+        break;
+    }    break islenen Dongude ekranda hecne gorsenmeyecek, cunki break-e kimi davam edecek ve dayanacaq.
+    Console.WriteLine(i);
+}
+for (int i = 0; i < 10; i++) 
+{
+    if (i == 0) 
+    {
+        continue;  continue islenen Dongude ise ekranda 1-den 9-a qeder 9-da daxil olmaqla yazacaq, cunki burada continue verilmisdir, ona gore de emri davam etdirecek.  
+    }
+    Console.WriteLine(i);
+}
+Sual 2.
+mueyyen olunmus obyektin, yeni class-in ozu demekdir... meselen:
+class Book
+{
+    public string kitab;
+    public Book(string kitab)
+    {
+ this.kitab=kitab;
+    }
+}
+bu o demekdir ki, this ifadesiylen 2 eyni adli property-den istifade elemek olar ve this ifadesi static methodu daxilinde istifade oluna bilmez.
+
+Sual 3.
+String class-di, string keyword-du.
+
+Sual 4.
+Equals(),GetHashCode(),GetType(),ToString() methodlari Object Class-inin methodlaridi.
+Equals()--> Gösterilen obyektin mövcud obyekte beraber olub olmadigini müeyyen edir.
+GetHashCode()--> Varsayilan hash funksiyasi kimi xidmet edir.
+GetType()--> Cari nümunenin növünü alir.
+ToString()--> Mövcud obyekti eks etdiren simli qaytarir.
+Sual 5.
+Static public-siz islenmir. class uzerinden deyer verilir. obyekte deyilde class-a aid olur.
+
+Sual 7.Metod adlari birden cox ola biler ancaq gerek parametrleri ferqli oldugu halda.
+
+Meselen:
+class Mektebli
+
+    { 
+       public int yas;
+       public int sinif;
+ 
+   public void MelumatDaxilEt(int yas , int sinif)
+    
+     { 
+            this.yas = yas;
+            this.sinif = sinif;
+         
+         }
+
+      public void MelumatDaxilEt(int yas)
+    
+       {
+             Random rndm = new Random();
+             this.sinif = rndm.Next();
+              this.yas= yas;
+          
+          }
+
+   }
+
+Mutleq gerek parametrler ayri olsun eger eyni olarsa ozaman parametrler arasinda secim olmaz ve beleikle sistem islemez
+
+
+Sual 8.Miras almaq bize kod azligina getirib cixardir.Ve kod azligi sisteme yararliq olaraq daha rahat islemesine getirib cixarir.
+Yazilan bir kodu tekrar olaraq yazmaga gerek qalmir.Meselen eger insan ve heyvan obyekti yaradiriqsa 
+bunu umumi bir kavramda ede blerik yeniki canli obyektivi yaradib ortaq olan parametr veya
+xusiyyetlerini bir yere yazaraq miras seklinde oturule bilir ve oturulurken onune : qoyulur.
+Bir inheritance sadece birinden inheritance ala biler.
